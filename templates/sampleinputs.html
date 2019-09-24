@@ -1,0 +1,342 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+<style>
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #4F4F4F;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 50px;
+    /*border-bottom: 1px solid #5e5e5e;*/
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #4F4F4F;
+    border-radius: 5px;
+    text-align: center;
+    color: 4F4F4F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #4F4F4F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00ABFF;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #FE0500;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{   text-align:center;
+    margin-bottom: 30px;
+}
+</style>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="https://imgur.com/MTAUjSK" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sampleinputs">Sample Inputs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+
+ <div class="container">
+        <div class="row">
+		
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Sample inputs</h1>
+        </div>
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="tweets">Tweets</button>
+            <button class="btn btn-default filter-button" data-filter="oneliners">One-Liners</button>
+            <button class="btn btn-default filter-button" data-filter="news">News</button>
+            <button class="btn btn-default filter-button" data-filter="proverbs">Proverbs</button>
+			<button class="btn btn-default filter-button" data-filter="wikipedia">Wikipedia</button>
+		<br>	 
+
+        </div>
+		
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title"></h1>
+        </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proverbs">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Early to bed and early to rise, makes a man healthy, wealthy and wise.</p>
+				  </div>
+				</div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter oneliners">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">I've been going through a lot right now and can't seem to find a parking space.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wikipedia">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">In engineering, a solution may be considered elegant if it uses a non-obvious method to produce a solution which is highly effective and simple.</p>
+				  </div>
+				</div>
+            </div>
+
+			
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tweets">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">dad: where do you think you’re going?
+<br><br>
+me: *caught applying for an art history degree* uh nowhere?
+</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter oneliners">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">I’m more than willing to test out that whole “money can’t buy happiness” thing.
+</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>			
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter news">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Trump says he deserves a Nobel Prize for 'many things' but says selection not fair.</p>
+				  </div>
+				</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tweets">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">trainer at gym sees me after a month: do you exercise outside of here?
+<br><br>
+*me remembering it was windy in the parking lot* some resistance training here and there.
+
+</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>			
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter news">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Almost 50 Baltimore schools with no AC close early as temps hit 90 on first day of fall.</p>
+				  </div>
+				</div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter oneliners">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">If my life was an algorithm, it would be gradient descent!</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proverbs">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">The old horse in the stable still yearns to run.</p>
+				  </div>
+				</div>
+            </div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter news">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Android Circuit: Galaxy S11 Cancellation Plans, Huawei's Mate 30 Gamble, Google Confirms Pixel 4.</p>
+				  </div>
+				</div>
+            </div>
+			
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wikipedia">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">The Shawshank Redemption is an American drama film written and directed by Frank Darabont, first released on September 23, 1994.</p>
+				  </div>
+				</div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tweets">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">Don’t open any messages you get from me. I’m not hacked, I’m just really mean.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter oneliners">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">The sitcom about airplanes never took off, because the pilot was terrible.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tweets">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">A web shooter like Spiderman would have so many uses, like I could grab the chips without leaving the couch.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter news">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Tropical Storm Karen heads for Puerto Rico, could impact U.S. mainland next week.</p>
+				  </div>
+				</div>
+            </div>
+			
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wikipedia">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">Ptolemy XIII arrived at Alexandria at the head of his army, in clear defiance of Caesar's demand that he disband and leave his army before his arrival.</p>
+				  </div>
+				</div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter oneliners">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">The ceiling isn’t my favorite part of the house, but it’s definitely up there.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tweets">
+                    <div class="content">
+						<div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+		  
+						  <div class="card-body">
+							<p class="card-text">I walk around my yard with a fake ankle monitor so my neighbors will not ask me to watch their kids.</p>
+						  </div>
+						</div>
+					</div>
+
+            </div>	
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proverbs">
+				<div class="card text-white bg-danger mb-3" style="max-width: 30rem;">				  
+				  <div class="card-body">					
+					<p class="card-text">When in Rome, do as the Romans do.</p>
+				  </div>
+				</div>
+            </div>						
+        </div>
+    </div>
+
+
+
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+
