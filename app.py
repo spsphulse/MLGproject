@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('home2.html')
+	return render_template('home.html')
 
 @app.route('/<string:page_name>/')
 def render_static(page_name):
@@ -99,7 +99,7 @@ def predict():
 		print('Sentence Length is '+str(sentLength))
 		print('Error Length is '+str(errorSum))
 		print('Prediction is '+str(my_prediction))
-	return render_template('result2.html',prediction = my_prediction)
+	return render_template('result.html',prediction = my_prediction)
 
 
 
