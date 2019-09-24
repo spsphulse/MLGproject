@@ -22,7 +22,7 @@ def predict():
 	with open('myword2vecModel.pkl', 'rb') as pickle_file:
 		content = pickle.load(pickle_file)
 	w2v=content
-	clf = pickle.load(open('knn.pkl', 'rb')) 
+	clf = pickle.load(open('KNN.pkl', 'rb')) 
 
 
 	#Alternative Usage of Saved Model
